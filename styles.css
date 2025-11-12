@@ -1,1 +1,28 @@
 /*  your css code here. If applicable */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(40, 1fr); /* 40x20 = 800 boxes */
+  gap: 2px;
+  width: 800px;
+  height: 400px;
+}
+
+.square {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #1d1d1d;
+  transition: background 1s ease;
+}
